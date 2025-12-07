@@ -17,7 +17,22 @@ const navItems = [
 
 export default function AuroraNavbar() {
   const router = useRouter();
-  const pathname = usePathname();
+  const rawPathname = usePathname(); // Use a local variable for the hook result
+
+  // --- SAFETY CHECK ---
+  // If the pathname is null or undefined (SSR/static export), return a non-breaking element
+  if (!rawPathname) {
+      // You can return a simple, un-animated placeholder to maintain height if needed, 
+      // but returning null is safer if you rely heavily on pathname logic.
+      return (
+        <nav className="fixed top-0 left-0 w-full h-16 bg-gray-900/50 backdrop-blur-md z-50">
+            <div className="max-w-7xl mx-auto h-full px-4 sm:px-6 lg:px-8"></div>
+        </nav>
+      ); 
+  }
+
+  // Once rawPathname is confirmed, we can use it safely.
+  const pathname = rawPathname;
 
   const [isOpen, setIsOpen] = useState(false);
   const [activeItem, setActiveItem] = useState(0);
@@ -25,6 +40,7 @@ export default function AuroraNavbar() {
   // Sync active link state with the current URL path
   useEffect(() => {
     const currentIndex = navItems.findIndex((item) => {
+      // Use the safe pathname variable here
       const normalizedPath = pathname.toLowerCase().replace(/\/$/, "");
       const normalizedHref = item.href.toLowerCase().replace(/\/$/, "");
 
@@ -49,7 +65,6 @@ export default function AuroraNavbar() {
     router.push(targetHref);
   };
 
-  // Use opacity + translateY instead of height:auto
   const menuVariants = {
     closed: { opacity: 0, y: -10 },
     open: {
@@ -62,7 +77,6 @@ export default function AuroraNavbar() {
   return (
     <nav className="fixed top-0 left-0 w-full bg-gray-900/50 backdrop-blur-md z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Ensure parent flex item doesn't wrap */}
         <div className="flex items-center justify-between h-16">
           {/* Dynamic Logo Component */}
           <motion.div
