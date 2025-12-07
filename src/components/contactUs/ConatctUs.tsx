@@ -32,7 +32,7 @@ export default function ContactUs() {
                         Let's Launch Together
                     </h1>
                     <p className="text-xl text-gray-400">
-                        Ready to begin your project's cosmic journey? Reach out below.
+                        Ready to begin your project's journey? Reach out below.
                     </p>
                 </header>
 

@@ -34,7 +34,7 @@ const projectData = [
     // emoji: "💾",
   },
   {
-    name: "NAMO Revamp (Frontend Development)",
+    name: "App Revamp (Frontend Development)",
     role: "Frontend Lead",
     techStack: ["Next.js", "React.js", "UI Libraries", "Docker"],
     achievements: [
