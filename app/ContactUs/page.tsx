@@ -7,7 +7,7 @@ import { motion, useAnimationControls } from 'framer-motion';
 
 // --- Configuration ---
 const EMAIL_ADDRESS = "p.ujjwal.8888@gmail.com";
-const API_ENDPOINT = 'http://localhost:5000/api/contact'; // CHANGE TO PRODUCTION URL ON DEPLOYMENT
+const API_ENDPOINT = '/api/contact'; 
 
 // --- Framer Motion Variants ---
 
