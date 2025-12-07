@@ -11,8 +11,7 @@ const milestones = [
     { 
         title: "Educational Foundation", 
         subtitle: "Completed my BE in Computer Engineering",
-        details: "Thakur College of Engineering and Technology (TCET), Mumbai. Built a strong technical base in software development and data structures.",
-        year: "2019 - 2023",
+details: "Thakur College of Engineering and Technology (TCET), Mumbai. Built a strong technical base in software development and data structures. Achieved a final CGPA of 9.24.",        year: "2019 - 2023",
         color: "bg-purple-600",
         icon: "🎓"
     },
@@ -25,7 +24,7 @@ const milestones = [
         icon: "📚"
     },
     { 
-        title: "Associate QA (Jio Platforms)", 
+        title: "Associate QA (Jio Platforms Limited)", 
         subtitle: "Automation Tester",
         details: ["Worked for 4 months in Automation Testing at Jio Platforms Limited.", "Focused on quality assurance and creating robust test scripts."],
         year: "Jan 2024 - Apr 2024",
@@ -33,7 +32,7 @@ const milestones = [
         icon: "🔬" // FIX: Changed 'icons' to 'icon' and used a professional emoji
     },
     { 
-        title: "SDE (Jio Platforms)", 
+        title: "SDE (Jio Platforms Limited)", 
         subtitle: "Software Engineer at Jio Platforms Limited",
         details: "Working on scalable enterprise solutions and contributing to high-impact projects since joining in early 2024. Focused on performance and reliability.",
         year: "Jan 2024 - Present",

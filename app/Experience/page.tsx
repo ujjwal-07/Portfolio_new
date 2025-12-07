@@ -10,14 +10,14 @@ const milestones = [
     { 
         title: "Initial Professional Exposure", 
         subtitle: "6-Month Internship at Forkodes",
-        details: ["Gained hands-on experience as a **Full Stack Web Developer.", "Worked with modern JavaScript frameworks."],
+        details: ["Gained hands-on experience as a Full Stack Web Developer.", "Worked with modern JavaScript frameworks."],
         year: "Jun 2022 - Dec 2022",
         color: "bg-cyan-600",
         icons: "📚"
 
     },
     { 
-        title: "Associate QA (Jio Platforms)", 
+        title: "Associate QA (Jio Platforms Limited)", 
         subtitle: "Automation Tester",
         details: ["Worked for 4 months in Automation Testing at Jio Platforms Limited.", "Focused on quality assurance and creating robust test scripts."],
         year: "Jan 2024 - Apr 2024",
@@ -26,12 +26,13 @@ const milestones = [
         
     },
     {
-        title: "SDE (Jio Platforms)",
+        title: "SDE (Jio Platforms Limited)",
         subtitle: " Full Stack Development",
         details: [
-            "Implemented Redis caching, reducing API response time from 100ms to 4ms.",
-            "Designed and secured internal DAM system used by 100+ users (RBAC).",
-            "Containerized with Docker and Docker Compose."
+          "Implemented Redis caching, reducing API response time from 100ms to 4ms.",
+    "Developed and maintained multiple high-performance frontend applications using React and Next.js, focusing on SEO and accessibility.",
+    "Designed and secured internal DAM system used by 100+ users (RBAC).",
+    "Containerized application stack with Docker and Docker Compose, simplifying deployment."
         ],
         year: "Apr 2024 - Present",
         color: "bg-red-500",

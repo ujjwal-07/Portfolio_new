@@ -10,6 +10,7 @@ import { SiMongodb, SiRedis } from "react-icons/si";
 import { RiTailwindCssLine } from "react-icons/ri";
 import { IoLogoJavascript } from "react-icons/io";
 import { RiNextjsFill } from "react-icons/ri";
+import { SiPostman } from "react-icons/si";
 
 // Note: Next.js icon is often represented by a standard triangle/caret in text/emoji, 
 // but we'll use a stylized div for a clean black-and-white look.
@@ -83,6 +84,12 @@ const logoSequence = [
     { 
         id: 'javascript', 
         content: <IoLogoJavascript className="text-yellow-400" />, 
+        type: 'icon', 
+        className: 'text-4xl filter drop-shadow(0 0 8px #f7df1e)' 
+    },
+    { 
+        id: 'Postgress', 
+        content: <SiPostman className="text-orange-400" />, 
         type: 'icon', 
         className: 'text-4xl filter drop-shadow(0 0 8px #f7df1e)' 
     },

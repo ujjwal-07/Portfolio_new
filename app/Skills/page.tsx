@@ -9,6 +9,7 @@ import { RiTailwindCssLine } from "react-icons/ri";
 import { IoLogoJavascript } from "react-icons/io";
 import { BiLogoPostgresql } from "react-icons/bi";
 import { RiNextjsFill } from "react-icons/ri";
+import { SiPostman } from "react-icons/si";
 
 import { DiMysql } from "react-icons/di";
 import React from "react";
@@ -190,6 +191,15 @@ export default function DragConstraints() {
                     whileHover={{ scale: 1.05, opacity: 0.9 }}
                 >
                     <DiMysql className="text-4xl md:text-6xl" color="rgb(0, 117, 143)"/>
+                </motion.div>
+                     <motion.div
+                    drag
+                    dragConstraints={constraintsRef}
+                    dragElastic={0.2}
+                    className="w-20 h-20 md:w-60 md:h-60 flex justify-center items-center rounded-2xl"
+                    whileHover={{ scale: 1.05, opacity: 0.9 }}
+                >
+                    <SiPostman className="text-4xl md:text-6xl" color="rgb(255, 108, 55)"/>
                 </motion.div>
             </motion.div>
         </div>

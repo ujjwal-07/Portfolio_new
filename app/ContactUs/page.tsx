@@ -123,7 +123,7 @@ export default function ContactPage() {
                         Let's Launch Together
                     </h1>
                     <p className="text-xl text-gray-400">
-                        Ready to begin your project's cosmic journey? Reach out below.
+                        Ready to begin your project's ? Reach out below.
                     </p>
                 </motion.header>
 
@@ -161,7 +161,7 @@ export default function ContactPage() {
                             <motion.button 
                                 type="submit" 
                                 disabled={!isIdle}
-                                className="w-full relative overflow-hidden py-3 px-6 border border-transparent rounded-lg text-lg font-semibold text-gray-900 bg-cyan-400 hover:bg-cyan-500 transition duration-200 disabled:opacity-70 disabled:cursor-not-allowed"
+                                className="w-full relative overflow-hidden py-3 px-6 border cursor-pointer border-transparent rounded-lg text-lg font-semibold text-gray-900 bg-cyan-400 hover:bg-cyan-500 transition duration-200 disabled:opacity-70 disabled:cursor-not-allowed"
                             >
                                 <div className="flex items-center justify-center space-x-2">
                                     <motion.span 
