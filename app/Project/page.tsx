@@ -49,7 +49,7 @@ const projectData = [
         // No link provided for this project
     },
     {
-        name: "Vikas Yatra Website",
+        name: "Frontend Developer — High-Traffic National Campaign Platform",
         role: "Frontend Developer",
         techStack: ["Next.js", "Tailwind CSS", "react-fast-marquee", "react-slick"],
         achievements: [

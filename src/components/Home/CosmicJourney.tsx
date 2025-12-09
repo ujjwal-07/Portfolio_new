@@ -40,7 +40,7 @@ const cards = [
         title: "Let's Connect",
         description: "Ready to collaborate on your next launch? Find my professional contacts, send a direct message, and let's turn ideas into functional reality.", 
         color: "from-rose-600/80 to-pink-500/80",
-        link: "/ContactUs" 
+        link: "/ContactMe" 
     },
 ];
 

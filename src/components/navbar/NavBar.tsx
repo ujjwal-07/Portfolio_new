@@ -9,10 +9,10 @@ import DynamicLogo from "../DynamicLogo";
 
 // Define the navigation items
 const navItems = [
-  { name: "Home", href: "/home" },
+  { name: "Home", href: "/" },
   { name: "Experience", href: "/Experience" },
   { name: "Skills", href: "/Skills" },
-  { name: "Contact", href: "/ContactUs" },
+  { name: "Contact", href: "/ContactMe" },
 ];
 
 export default function AuroraNavbar() {
@@ -82,7 +82,7 @@ export default function AuroraNavbar() {
           <motion.div
             className="flex items-center flex-shrink-0"
             whileHover={{ scale: 1.05 }}
-            onClick={() => router.push("/home")}
+            onClick={() => router.push("/")}
           >
             <div className="text-3xl font-extrabold">
               <DynamicLogo />

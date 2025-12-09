@@ -11,9 +11,7 @@ import { RiTailwindCssLine } from "react-icons/ri";
 import { IoLogoJavascript } from "react-icons/io";
 import { RiNextjsFill } from "react-icons/ri";
 import { SiPostman } from "react-icons/si";
-
-// Note: Next.js icon is often represented by a standard triangle/caret in text/emoji, 
-// but we'll use a stylized div for a clean black-and-white look.
+import { SiPostgresql } from 'react-icons/si'; // Adding PostgreSQL icon as a placeholder for Postgress
 
 // --- Configuration ---
 const CYCLE_INTERVAL_MS = 2500; // 2.5 seconds per logo display
@@ -44,12 +42,10 @@ const logoSequence = [
     },
     { 
         id: 'nextjs', 
-        // Using a stylized div for the Next.js icon look
-     content: <RiNextjsFill className="text-green-400" />,       
-       type: 'icon', 
+        content: <RiNextjsFill className="text-white" />, 
+        type: 'icon', 
         className: 'text-4xl filter drop-shadow(0 0 8px #ffffff)' 
     },
- 
     { 
         id: 'nodejs', 
         content: <FaNodeJs className="text-green-500" />, 
@@ -74,7 +70,6 @@ const logoSequence = [
         type: 'icon', 
         className: 'text-4xl filter drop-shadow(0 0 8px #0db7ed)' 
     },
-    // Adding Tailwind and JavaScript for comprehensive representation
     { 
         id: 'tailwind', 
         content: <RiTailwindCssLine className="text-cyan-400" />, 
@@ -88,10 +83,16 @@ const logoSequence = [
         className: 'text-4xl filter drop-shadow(0 0 8px #f7df1e)' 
     },
     { 
-        id: 'Postgress', 
-        content: <SiPostman className="text-orange-400" />, 
+        id: 'postman', 
+        content: <SiPostman className="text-orange-400" />, // Using SiPostman
         type: 'icon', 
         className: 'text-4xl filter drop-shadow(0 0 8px #f7df1e)' 
+    },
+    { 
+        id: 'postgres', 
+        content: <SiPostgresql className="text-blue-500" />, // Corrected icon for Postgres
+        type: 'icon', 
+        className: 'text-4xl filter drop-shadow(0 0 8px #4169E1)' 
     },
 ];
 
@@ -103,10 +104,15 @@ const itemVariants = {
 };
 
 export default function DynamicLogo() {
+    const [isMounted, setIsMounted] = useState(false); // New state for hydration guard
     const [currentIndex, setCurrentIndex] = useState(0);
 
-    // useEffect manages the cycling timer
+    // FIX: The cycling timer now starts only after the component has mounted, 
+    // ensuring the first server-rendered output is stable.
     useEffect(() => {
+        setIsMounted(true);
+        
+        // Start the timer ONLY after mounting
         const timer = setInterval(() => {
             setCurrentIndex(prevIndex => (prevIndex + 1) % logoSequence.length);
         }, CYCLE_INTERVAL_MS);
@@ -114,6 +120,18 @@ export default function DynamicLogo() {
         return () => clearInterval(timer);
     }, []); 
 
+    // --- Hydration Guard ---
+    if (!isMounted) {
+        // Render the stable state (your name) during server render and initial client render
+        const stableLogo = logoSequence[0]; 
+        return (
+            <div className={`flex-shrink-0 select-none h-8 flex items-center justify-center ${stableLogo.className}`}>
+                {stableLogo.content}
+            </div>
+        );
+    }
+
+    // --- Dynamic Rendering (After Hydration) ---
     const currentLogo = logoSequence[currentIndex];
 
     return (
