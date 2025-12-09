@@ -1,5 +1,4 @@
 // app/components/CosmicJourney.tsx
-"use client";
 
 import React, { useRef } from 'react';
 import { motion, useScroll, useTransform, Variants } from 'framer-motion'; 
@@ -15,12 +14,12 @@ import { TbFileCv } from "react-icons/tb";
 const externalLinks = [
     { name: 'LinkedIn Profile', href: 'https://www.linkedin.com/in/ujjwal-pandey-3253691a7/', icon: <FaLinkedin size={60} className="text-cyan-400" /> },
     { name: 'GitHub Profile', href: 'https://github.com/ujjwal-07', icon: <FaGithub size={60} className="text-gray-300" /> }, 
-    { name: 'Download Resume', href: 'https://drive.google.com/file/d/1KwQfRAyWeRqtP_jYdBGWMSwYffdM8H1b/view?usp=sharing', icon: <TbFileCv size={60} className="text-purple-400" />, download: 'Ujjwal_Pandey_CV.pdf' }, 
+    { name: 'Download Resume', href: 'https://drive.google.com/file/d/146vTp13OYTD_y38CWqmhv0vkR_eehI_f/view?usp=sharing', icon: <TbFileCv size={60} className="text-purple-400" />, download: 'Ujjwal_Pandey_CV.pdf' }, 
     
     // Repeating the sequence
     { name: 'LinkedIn Profile', href: 'https://www.linkedin.com/in/ujjwal-pandey-3253691a7/', icon: <FaLinkedin size={60} className="text-cyan-400" /> },
     { name: 'GitHub Profile', href: 'https://github.com/ujjwal-07', icon: <FaGithub size={60} className="text-gray-300" /> }, 
-    { name: 'Download Resume', href: 'https://drive.google.com/file/d/1KwQfRAyWeRqtP_jYdBGWMSwYffdM8H1b/view?usp=sharing', icon: <TbFileCv size={60} className="text-purple-400" />, download: 'Ujjwal_Pandey_CV.pdf' }, 
+    { name: 'Download Resume', href: 'https://drive.google.com/file/d/146vTp13OYTD_y38CWqmhv0vkR_eehI_f/view?usp=sharing', icon: <TbFileCv size={60} className="text-purple-400" />, download: 'Ujjwal_Pandey_CV.pdf' }, 
 ];
 
 // --- Card Data (Unchanged) ---
