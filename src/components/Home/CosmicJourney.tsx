@@ -171,7 +171,7 @@ export default function CosmicJourney() {
                                 animation: "pulse-glow 4s infinite alternate" 
                             }}
                         >
-                            Full Stack Developer.
+                           Full Stack AI Engineer.
                         </motion.span>
                     </motion.p>
                 </motion.header>

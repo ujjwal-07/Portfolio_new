@@ -7,7 +7,33 @@ import React from "react";
 import { ExternalLink } from 'lucide-react'; 
 
 // --- Data Definition ---
-const projectData = [
+export const projectData = [
+    {
+        name: "AI-Powered RAG Document Assistant",
+        role: "Lead Full Stack AI Engineer",
+        techStack: [
+            "Next.js 15",
+            "React 19",
+            "TypeScript",
+            "PostgreSQL",
+            "Drizzle ORM",
+            "NextAuth.js v5",
+            "Tailwind CSS",
+            "LangChain",
+            "HuggingFace Inference",
+            "Framer Motion",
+            "Tesseract.js"
+        ],
+        achievements: [
+            "Architected a scalable RAG (Retrieval-Augmented Generation) system capable of processing complex PDF documents with OCR integration.",
+            "Engineered a real-time, streaming chat interface with sub-second latency using LangChain and refined prompt engineering.",
+            "Implemented secure, role-based authentication and session management using NextAuth v5 (Beta).",
+            "Optimized vector search performance using PostgreSQL with Drizzle ORM for high-efficiency data retrieval.",
+            "Designed a highly responsive, accessibility-focused UI with dark mode support and fluid animations using Framer Motion."
+        ],
+        color: "#8b5cf6", // Violet (AI/Modern)
+        link: "https://github.com/ujjwal-07/rag-chatbot",
+    },
     {
         name: "OneTrace – Productivity Platform",
         role: "Project Lead & Full Stack Developer",
@@ -58,8 +84,10 @@ const projectData = [
         ],
         color: "#3399ff", // Bright Blue
         link: "https://www.vikasyatra-demo.in", // Placeholder Link
-    },
+    }
 ];
+
+
 
 
 // --- Variants for Staggered Grid Entrance ---

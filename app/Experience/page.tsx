@@ -16,7 +16,7 @@ const milestones = [
     "Designed and secured internal DAM system used by 100+ users (RBAC).",
     "Containerized application stack with Docker and Docker Compose, simplifying deployment."
         ],
-        year: "Apr 2024 - Present",
+        year: "Mar 2024 - Present",
         color: "bg-red-500",
         icons : "💻"
 
@@ -24,8 +24,8 @@ const milestones = [
     { 
         title: "Associate QA (Jio Platforms Limited)", 
         subtitle: "Automation Tester",
-        details: ["Worked for 4 months in Automation Testing at Jio Platforms Limited.", "Focused on quality assurance and creating robust test scripts."],
-        year: "Jan 2024 - Apr 2024",
+        details: ["Worked for a months in Automation Testing at Jio Platforms Limited.", "Focused on quality assurance and creating robust test scripts."],
+        year: "Jan 2024 - Feb 2024",
         color: "bg-orange-500", // New color for the QA step
         icons : "🌱"
         
@@ -33,10 +33,10 @@ const milestones = [
     {
   
 
-          title: "Initial Professional Exposure", 
-        subtitle: "6-Month Internship at Forkodes",
+          title: " Professional Exposure", 
+        subtitle: "worked Full Time for a Year at Forkodes",
         details: ["Gained hands-on experience as a Full Stack Web Developer.", "Worked with modern JavaScript frameworks."],
-        year: "Jun 2022 - Dec 2022",
+        year: "Jun 2022 - Jun 2023",
         color: "bg-cyan-600",
         icons: "📚"
       
